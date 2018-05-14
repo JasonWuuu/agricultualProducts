@@ -101,7 +101,17 @@ function retable1()
 END IF
 %> 
 <script language="javascript">
-
+$.fn.modal.Constructor.prototype.hideModal = function () {
+                var that = this
+                this.$element.hide()
+                this.backdrop(function () {
+                    //判断当前页面所有的模态框都已经隐藏了之后body移除.modal-open，即body出现滚动条。
+                    $('.modal.fade.in').length === 0 && that.$body.removeClass('modal-open')
+                    that.resetAdjustments()
+                    that.resetScrollbar()
+                    that.$element.trigger('hidden.bs.modal')
+                })
+            };
 var lsdz = "";
 function checkIn()
 {
@@ -292,7 +302,7 @@ function checkIn()
 <div align="center"><font color="#0000FF" class="main">（内部资料系统管理）内容与文章系统增加 </font></div>
 <hr>
 <form method="POST" action="article_save.asp" name="un">
-  <table width="653" border="0" bordercolordark="#99CCFF" bordercolorlight="#99CCFF" cellspacing="1" align="center" cellpadding="6" bgcolor="#000000">
+  <table width="653" border="0" bordercolordark="#99CCFF" bordercolorlight="#99CCFF" cellspacing="1" align="center" cellpadding="6" bgcolor="#000000" style="width:953px;" class="table table-bordered">
     <tr bgcolor="#FFFFFF"> 
       <td width="21%" class="main">大类别：</td>
       <td width="79%" class="main"> 
@@ -464,7 +474,7 @@ function checkIn()
     <tr bgcolor="#FFFFFF"> 
       <td width="21%" class="main">简介：</td>
       <td width="79%" class="main"> 
-        <textarea name="info_desc" rows="10" cols="60"></textarea>
+        <textarea name="info_desc" rows="10" cols="60" class="form-control"></textarea>
       </td>
     </tr>
     <tr bgcolor="#FFFFFF"> 

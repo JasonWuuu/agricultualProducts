@@ -14,8 +14,8 @@
     "imageCompressEnable": true, /* 是否压缩图片,默认是true */
     "imageCompressBorder": 1600, /* 图片压缩最长边限制 */
     "imageInsertAlign": "none", /* 插入的图片浮动方式 */
-    "imageUrlPrefix": "http://img.dakayi.cc", /* 图片访问路径前缀 */
-    "imagePathFormat": "/pic/{yyyy}{mm}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "imageUrlPrefix": "http://img.chinajci.com", /* 图片访问路径前缀 */
+    "imagePathFormat": "/img_article/{yyyy}{mm}{dd}{time}{rand:6}{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
     /* {filename} 会替换成原文件名,配置这项需要注意中文乱码问题 */
     /* {rand:6} 会替换成随机数,后面的数字是随机数的位数 */
     /* {time} 会替换成时间戳 */
@@ -31,13 +31,13 @@
     /* 涂鸦图片上传配置项 */
     "scrawlActionName": "uploadscrawl", /* 执行上传涂鸦的action名称 */
     "scrawlFieldName": "upfile", /* 提交的图片表单名称 */
-    "scrawlPathFormat": "/pic/{yyyy}{mm}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "scrawlPathFormat": "/img_article/{yyyy}{mm}{dd}{time}{rand:6}{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
     "scrawlMaxSize": 200048000, /* 上传大小限制，单位B */
-    "scrawlUrlPrefix": "http://img.dakayi.cc", /* 图片访问路径前缀 */
+    "scrawlUrlPrefix": "http://img.chinajci.com", /* 图片访问路径前缀 */
     "scrawlInsertAlign": "none",
     /* 截图工具上传 */
     "snapscreenActionName": "uploadimage", /* 执行上传截图的action名称 */
-    "snapscreenPathFormat": "/pic/{yyyy}{mm}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "snapscreenPathFormat": "/img_article/{yyyy}{mm}{dd}{time}{rand:6}{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
     "snapscreenUrlPrefix": "", /* 图片访问路径前缀 */
     "snapscreenInsertAlign": "none", /* 插入的图片浮动方式 */
     /* 抓取远程图片配置 */
@@ -49,8 +49,8 @@
     ],
     "catcherActionName": "catchimage", /* 执行抓取远程图片的action名称 */
     "catcherFieldName": "source", /* 提交的图片列表表单名称 */
-    "catcherPathFormat": "/pic/{yyyy}{mm}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
-    "catcherUrlPrefix": "http://img.dakayi.cc", /* 图片访问路径前缀 */
+    "catcherPathFormat": "/img_article/{yyyy}{mm}{dd}{time}{rand:6}{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
+    "catcherUrlPrefix": "http://img.chinajci.com", /* 图片访问路径前缀 */
     "catcherMaxSize": 200048000, /* 上传大小限制，单位B */
     "catcherAllowFiles": [
         ".png",
@@ -63,7 +63,7 @@
     "videoActionName": "uploadvideo", /* 执行上传视频的action名称 */
     "videoFieldName": "upfile", /* 提交的视频表单名称 */
     "videoPathFormat": "/pic/video/{yyyy}{mm}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
-    "videoUrlPrefix": "http://img.dakayi.cc", /* 视频访问路径前缀 */
+    "videoUrlPrefix": "http://img.chinajci.com", /* 视频访问路径前缀 */
     "videoMaxSize": 1002400000, /* 上传大小限制，单位B，默认100MB */
     "videoAllowFiles": [
         ".flv",
@@ -88,7 +88,7 @@
     "fileActionName": "uploadfile", /* controller里,执行上传视频的action名称 */
     "fileFieldName": "upfile", /* 提交的文件表单名称 */
     "filePathFormat": "/pic/file/{yyyy}{mm}/{time}{rand:6}", /* 上传保存路径,可以自定义保存路径和文件名格式 */
-    "fileUrlPrefix": "http://img.dakayi.cc", /* 文件访问路径前缀 */
+    "fileUrlPrefix": "http://img.chinajci.com", /* 文件访问路径前缀 */
     "fileMaxSize": 512000000, /* 上传大小限制，单位B，默认50MB */
     "fileAllowFiles": [
         ".png",
@@ -131,7 +131,7 @@
     "imageManagerActionName": "listimage", /* 执行图片管理的action名称 */
     "imageManagerListPath": "/pic/", /* 指定要列出图片的目录 */
     "imageManagerListSize": 20, /* 每次列出文件数量 */
-    "imageManagerUrlPrefix": "http://img.dakayi.cc", /* 图片访问路径前缀 */
+    "imageManagerUrlPrefix": "http://img.chinajci.com", /* 图片访问路径前缀 */
     "imageManagerInsertAlign": "none", /* 插入的图片浮动方式 */
     "imageManagerAllowFiles": [
         ".png",
@@ -143,7 +143,7 @@
     /* 列出指定目录下的文件 */
     "fileManagerActionName": "listfile", /* 执行文件管理的action名称 */
     "fileManagerListPath": "/pic/file", /* 指定要列出文件的目录 */
-    "fileManagerUrlPrefix": "http://img.dakayi.cc", /* 文件访问路径前缀 */
+    "fileManagerUrlPrefix": "http://img.chinajci.com", /* 文件访问路径前缀 */
     "fileManagerListSize": 20, /* 每次列出文件数量 */
     "fileManagerAllowFiles": [
         ".png",
