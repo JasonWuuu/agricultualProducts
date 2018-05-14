@@ -1,0 +1,183 @@
+.my-editor-container {
+    background: linear-gradient(160deg, rgba(74, 206, 211, 0.5), rgba(211, 128, 210, 0.5)) 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
+    background-size: cover !important;
+}
+
+.my-editor-container .left-container {
+    padding: 2px;
+    background-color: rgba(217, 225, 228, 1);
+    height: 100%;
+    font-size: 14px;
+}
+
+.my-editor-container .left-container #systemTemplates .nav-tabs li {
+    width: 100%;
+}
+
+.my-editor-container .left-container #editor-tpls-navtab li.nav-item {
+    padding: 0px;
+}
+
+.my-editor-container .right-container {
+    padding: 2px;
+    background-color: rgba(217, 225, 228, 1);
+}
+
+.my-editor-container .nav-toolbars {
+    margin: 0px auto;
+    border-bottom: 0 none !important;
+}
+
+.my-editor-container .nav-toolbars>li>a {
+    border: 0 none !important;
+    padding: 5px 0px;
+    line-height: 26px;
+    display: inline;
+}
+
+.my-editor-container .style-result {
+    overflow-y: auto;
+    position: relative;
+    border-top: 2px solid rgb(221, 221, 221);
+}
+
+.my-editor-container .style-result ul {
+    padding: 0px;
+}
+
+.my-editor-container .style-result ul li {
+    list-style-type: none;
+    position: relative;
+    background: #FFF;
+    border-bottom: 1px dotted #ddd;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: block;
+}
+
+.my-editor-container .style-result ul li:hover {
+    background: #eee;
+}
+
+.my-editor-container .style-list {
+    margin-top: 20px;
+    position: relative;
+}
+
+.my-editor-container .style-list .content {
+    height: 240px;
+    cursor: pointer;
+    padding: 0 5px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0 0 3px rgb(170, 170, 170);
+}
+
+.my-editor-container .style-list .tools {
+    display: none;
+}
+
+.my-editor-container #html-parsers-items .col-md-4 {
+    width: 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.my-editor-container #html-parsers-items .col-md-4 img {
+    height: 200px;
+    text-align: center;
+    max-width: 100%;
+}
+
+.my-editor-container #html-parsers-items .appmsg {
+    box-shadow: 0 0 3px rgb(170, 170, 170);
+    margin: 10px 0;
+    margin-left: 2px;
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.my-editor-container .TypesettingStyle {
+    min-height: 270px;
+}
+
+.my-editor-container .cover {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    opacity: 0.8;
+}
+
+.my-editor-container #html-parsers-options {
+    white-space: normal;
+    font-size: 14px;
+    line-height: 30px;
+    margin: 2px auto;
+    padding: 10px 10px;
+    border: 2px dashed #f3e9f3;
+    max-width: 100%;
+}
+
+.my-editor-container .personalTempContainer {
+    height: 250px;
+    overflow: hidden;
+}
+
+.ParpersonalTempContainer:hover {
+    display: block;
+    background: rgb(202, 204, 202);
+    padding: 10px;
+}
+
+.my-editor-container .glyphicon-trash {
+    font-size: 15px;
+    color: rgb(42, 107, 230);
+}
+
+.my-editor-container .editorslide {
+    /* position: absolute;
+    right: -80px;
+    width: 80px; */
+    bottom: initial;
+    top: 150px;
+}
+
+.my-editor-container .editorslide ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.my-editor-container .editorslide ul li {
+    list-style: none;
+}
+
+.ParpersonalTempContainer {
+    border-top: 1px dashed rgb(117, 116, 116);
+    height: 300px;
+}
+
+.subPersonalTempContainer {
+    height: 10px;
+}
+
+#modile_image_sortable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#modile_image_sortable li {
+    margin: 3px 3px 3px 0;
+    padding: 1px;
+    float: left;
+    width: 164px;
+    height: 94px;
+    font-size: 4em;
+    text-align: center;
+}
+
+.ui-state-highlight {
+    height: 1.5em;
+    line-height: 1.2em;
+}
