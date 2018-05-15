@@ -9,3 +9,9 @@ POST http://localhost:8989/article_category_order.asp
 Content-Type:application/x-www-form-urlencoded
 
 ids=8|9
+
+###
+
+POST http://img.chinajci.com/article/ueditor/asp/controller.asp?action=uploadimage HTTP/1.1
+
+
