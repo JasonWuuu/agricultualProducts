@@ -1,7 +1,7 @@
 <!-- #include virtual = "/include/mylib1105.asp" -->
 
 <!-- #include virtual = "/include/auth.asp" -->
-<!-- #include virtual = "/include/sql.asp" -->
+
 
 
 <%
