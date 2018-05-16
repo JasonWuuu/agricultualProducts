@@ -28,14 +28,17 @@ function domToimage(table) {
     var node$ = $('<div></div>').append(table);
     node$.appendTo('body');
     var node = node$[0];
-    domtoimage.toPng(node)
-        .then(function (dataUrl) {
+    domtoimage.toJpeg(node, {
+        quality: 1.0,
+        bgcolor: '#fff',
+        width: $(table).width()
+    }.then(function (dataUrl) {
             return sumitImageFile(dataUrl);
         }).then(function (src) {
             // console.log(src);
             var img = new Image();
             img.src = src;
-            var parent2$ = $("<div></div>");
+            var parent2$ = $("<div style=\"width:100%;\"></div>");
             parent2$.append(img);
             parent1$.append(parent2$);
         })
