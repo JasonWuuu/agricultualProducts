@@ -1,4 +1,4 @@
-<!-- #include virtual = "/include/mylib1105.asp" -->
+﻿<!-- #include virtual = "/include/mylib1105.asp" -->
 
 <!-- #include virtual = "/include/auth.asp" -->
 
