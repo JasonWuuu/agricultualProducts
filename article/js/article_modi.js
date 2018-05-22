@@ -50,7 +50,7 @@ function domToimage(table) {
             node$.remove();
             console.error('转换图片出错，可能遇到跨域问题,但仍可继续操作!', error);
             deferred.reject(error);
-        });
+        }))
     return deferred.promise();
 }
 
