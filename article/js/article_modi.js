@@ -31,7 +31,8 @@ function domToimage(table) {
     domtoimage.toJpeg(node, {
         quality: 1.0,
         bgcolor: '#fff',
-        width: $(table).width()
+        width: $(table).width() + 4,
+        height: $(table).height() + 4
     }).then(function (dataUrl) {
             return sumitImageFile(dataUrl);
         }).then(function (src) {
